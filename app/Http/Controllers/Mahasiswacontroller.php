@@ -19,6 +19,6 @@ class Mahasiswacontroller extends Controller
             'status' => 'Aktif'
         ];
 
-        return view('mahasiswa', compact('mahasiswa'));
+        return view('page.profile', compact('mahasiswa'));
     }
 }
