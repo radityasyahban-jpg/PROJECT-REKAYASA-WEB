@@ -98,9 +98,12 @@
         </a>
 
         <div class="ms-auto">
-            <a href="{{ route('logout') }}" class="btn btn-outline-dark btn-sm">
-                Logout
-            </a>
+            <form action="{{ route('admin.logout') }}" method="POST">
+                @csrf
+                <button type="submit" class="btn btn-outline-dark btn-sm">
+                    Logout
+                </button>
+            </form>
         </div>
     </nav>
 
