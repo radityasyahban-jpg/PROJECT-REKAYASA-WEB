@@ -58,6 +58,10 @@ Route::middleware('auth')->prefix('admin')->name('admin.')->group(function () {
         return view('admin.home');
     })->name('dashboard');
 
+    // Cetak PDF Projects
+    Route::get('/projects/pdf', [AdminProjectController::class, 'cetakPdf'])
+        ->name('projects.pdf');
+
     // CRUD Projects
     Route::resource('projects', AdminProjectController::class)
         ->except(['show']);

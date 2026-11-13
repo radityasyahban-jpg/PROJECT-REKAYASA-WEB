@@ -12,9 +12,18 @@
     <div class="d-flex justify-content-between align-items-center mb-3">
         <h5 class="fw-bold">Daftar Project</h5>
 
-        <a href="{{ route('admin.projects.create') }}" class="btn btn-primary">
-            + Tambah Project
-        </a>
+        <div class="d-flex gap-2">
+            <a href="{{ route('admin.projects.create') }}" class="btn btn-primary">
+                + Tambah Project
+            </a>
+
+            <a href="{{ route('admin.projects.pdf') }}"
+               class="btn btn-danger"
+               target="_blank">
+                <i class="bi bi-file-earmark-pdf"></i>
+                Cetak PDF
+            </a>
+        </div>
     </div>
 
     @if (session('success'))
