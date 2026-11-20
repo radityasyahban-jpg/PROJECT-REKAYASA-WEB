@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Mahasiswacontroller;
 use App\Http\Controllers\ProjectsController;
 use App\Http\Controllers\AdminProjectController;
-use App\Http\Controllers\AdminAuthController;
+use App\Http\Controllers\Auth\AdminAuthController;
 
 // Halaman Utama
 Route::get('/', function () {
